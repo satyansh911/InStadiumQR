@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     template: "%s | InStadiumQR",
   },
   description: "Dedicated QR dashboard for InStadium stadium entries.",
+  icons: {
+    icon: "/Instadiumlogo.png",
+    shortcut: "/Instadiumlogo.png",
+    apple: "/Instadiumlogo.png",
+  },
 };
 
 export default function RootLayout({
