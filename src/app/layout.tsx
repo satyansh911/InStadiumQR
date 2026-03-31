@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://instadiumqr.vercel.app"),
   title: {
     default: "InStadiumQR | Stadium QR Library",
     template: "%s | InStadiumQR",
@@ -24,6 +25,27 @@ export const metadata: Metadata = {
     icon: "/Instadiumlogo.png",
     shortcut: "/Instadiumlogo.png",
     apple: "/Instadiumlogo.png",
+  },
+  openGraph: {
+    title: "InStadiumQR | Stadium QR Library",
+    description: "Dedicated QR dashboard for InStadium stadium entries.",
+    url: "https://instadiumqr.vercel.app",
+    siteName: "InStadiumQR",
+    images: [
+      {
+        url: "/Instadiumlogo.png",
+        width: 512,
+        height: 512,
+        alt: "InStadiumQR",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "InStadiumQR | Stadium QR Library",
+    description: "Dedicated QR dashboard for InStadium stadium entries.",
+    images: ["/Instadiumlogo.png"],
   },
 };
 
