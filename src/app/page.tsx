@@ -78,10 +78,11 @@ export default function HomePage() {
       return;
     }
 
-    if (!token.trim()) {
-      setAdminMsg("Paste an admin Bearer token first.");
-      return;
-    }
+    // Token requirement temporarily disabled for minor project
+    // if (!token.trim()) {
+    //   setAdminMsg("Paste an admin Bearer token first.");
+    //   return;
+    // }
 
     setAdminBusy(true);
     setAdminMsg(null);
